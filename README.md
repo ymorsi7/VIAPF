@@ -10,6 +10,10 @@ ymorsi@ucsd.edu
 
 ## File Structure
 
+- README.md
+- SUCCESSFUL.ipynb (This is the notebook including vocal isolation code using Open-UnMix and profanity detection code using Google Cloud)
+- FAILURE.ipynb (This is the initial autoencoder model that was scrapped)
+- CSE190.pdf (This is the LaTeX report)
 - **images/**
   - AE.png
   - bohemian.png
@@ -18,10 +22,7 @@ ymorsi@ucsd.edu
   - noise.png
   - OU.png
   - trouble.png
-- CSE190.pdf
-- FAILURE.ipynb
-- README.md
-- SUCCESSFUL.ipynb
+
 
 
 
