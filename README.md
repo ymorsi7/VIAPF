@@ -127,18 +127,18 @@ Finally, ’Maps’ (Figure 7) also shows Open Unmix’s model’s consistent pe
 
 The system’s effectiveness in detecting and muting profanity was evaluated using transcription accuracy and profanity metrics:
 
-- **Recognized Lyrics (Excerpt):** ...Little stupid as I’ll give I’ll give I’ll give a fuk bitch I don’t give up fuk about you or anything that you do don’t give up about you or anything that you
+- **Recognized Lyrics (Excerpt):** ...Little stupid as\* I’ll give I’ll give I’ll give a fuk b\*tch I don’t give up fu\*k about you or anything that you do don’t give up about you or anything that you
 
 - **Transcription Accuracy:** 27.91%
 
 - **Profanity Metrics:**
-  - **Ground Truth Curse Words:** [’fu*k’, ’as*’, ’as*’, ’as*’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’sh*t’, ’fu*k’, ’fu*k’, ’fu*k’, ’sh*t’, ’bi*ch’, ’bi*ch’, ’bi*ch’, ’as*’, ’as*’, ’fu*k’, ’as*’, ’as*’, ’as*’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’ni*gas’, ’ni*gas’, ’bi*ch’, ’sh*t’, ’ni*ga’, ’bi*ch’, ’ni*gas’, ’ni*gas’, ’as*’, ’as*’, ’as*’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’sh*t’, ’bi*ch’, ’bi*ch’, ’as*’, ’fuc*in’]
+  - **Ground Truth Curse Words:** [’fu\*k’, ’as\*’, ’as\*’, ’as\*’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’sh\*t’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’sh\*t’, ’bi\*ch’, ’bi\*ch’, ’bi\*ch’, ’as\*’, ’as\*’, ’fu\*k’, ’as\*’, ’as\*’, ’as\*’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’ni\*gas’, ’ni\*gas’, ’bi\*ch’, ’sh\*t’, ’ni\*ga’, ’bi\*ch’, ’ni\*gas’, ’ni\*gas’, ’as\*’, ’as\*’, ’as\*’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’sh\*t’, ’bi\*ch’, ’bi\*ch’, ’as\*’, ’fuc\*in’]
   
-  - **Detected Curse Words:** [’fu*k’, ’as*’, ’as*’, ’fu*k’, ’fu*k’, ’fu*k’, ’bi*ch’, ’fu*k’, ’da*n’, ’as*’]
+  - **Detected Curse Words:** [’fu\*k’, ’as\*’, ’as\*’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’bi\*ch’, ’fu\*k’, ’da\*n’, ’as\*’]
   
-  - **Misclassified Curse Words:** [’sh*t’, ’sh*t’, ’ni*gas’, ’ni*gas’, ’sh*t’, ’ni*ga’, ’ni*gas’, ’ni*gas’, ’sh*t’, ’fuc*in’]
+  - **Misclassified Curse Words:** [’sh\*t’, ’sh\*t’, ’ni\*gas’, ’ni\*gas’, ’sh\*t’, ’ni\*ga’, ’ni\*gas’, ’ni\*gas’, ’sh\*t’, ’fuc\*in’]
   
-  - **Misclassified Non-Curse Words:** [’fu*k’, ’fu*k’, ’fu*k’, ’fu*k’, ’da*n’]
+  - **Misclassified Non-Curse Words:** [’fu\*k’, ’fu\*k’, ’fu\*k’, ’fu\*k’, ’da\*n’]
   
   - **Percent Profanity Removed:** 20.00%
 
