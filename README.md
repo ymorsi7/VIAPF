@@ -8,6 +8,23 @@ University of California, San Diego
 La Jolla, CA 92093  
 ymorsi@ucsd.edu
 
+## File Structure
+
+- **images/**
+  - AE.png
+  - bohemian.png
+  - diana.png
+  - maps.png
+  - noise.png
+  - OU.png
+  - trouble.png
+- CSE190.pdf
+- FAILURE.ipynb
+- README.md
+- SUCCESSFUL.ipynb
+
+
+
 ## Abstract
 
 This report discusses my project, in which I take in audio tracks in order to isolate vocals and mute profanity. Returned tracks include the isolated vocals, the isolated vocals with the profanity muted, and the original track without profanity. The main goal of this project is to transform a song with instruments and inappropriate vocals in order to make it more user-friendly. Some avoid listening to music with instruments due to them causing headaches, so this is a solution that heeds that issue. When it comes to profanity in music, a more obvious problem, some prefer songs without curse words. This can be done either by businesses who want to play child-friendly music or parents that do not want their children listening to profanity. This project uses advanced audio processing and machine learning techniques. The final solution uses Open-Unmix for vocal isolation and Google Speech-to-Text for profanity detection (Pydub is also used to mute curse words).
@@ -41,7 +58,7 @@ The Open-Unmix (UMX) model is a highly ranked and used model designed for music 
 
 - **Output:** The model subsequently brings the isolated spectrogram back to the time domain, which produces vocal tracks without the instruments. Below is the architecture of the Open-Unmix model, showing a lower-level explanation.
 
-![Architecture of the Open-Unmix Model](spects/OU.png)
+![Architecture of the Open-Unmix Model](images/OU.png)
 
 ### 3.2 Autoencoder-Based Neural Network
 
@@ -90,7 +107,7 @@ The MUSDB18-HQ dataset was used for our training, which has high-quality tracks 
   
 - **Evaluation:** The model was evaluated using Signal-to-Distortion Ratio (SDR), Signal-to-Interference Ratio (SIR), and subjective listening tests, as observed in images. We were able to compare our isolated vocal tracks with the official acapella.
 
-![Architecture of the Autoencoder Model](spects/AE.png)
+![Architecture of the Autoencoder Model](images/AE.png)
 
 #### 4.2.2 Autoencoder-based Model
 
@@ -98,7 +115,7 @@ The MUSDB18-HQ dataset was used for our training, which has high-quality tracks 
 
 - **Evaluation:** For performance, we had issues due to noise and pauses, especially in songs with complex arrangements.
 
-![Autoencoder Output Spectrogram](spects/noise.png)
+![Autoencoder Output Spectrogram](images/noise.png)
 
 ## 5. Results
 
@@ -106,22 +123,22 @@ The MUSDB18-HQ dataset was used for our training, which has high-quality tracks 
 
 The models were tested on several songs, including ’I Knew You Were Trouble’, ’Dirty Diana’, ’Bohemian Rhapsody’, and ’Maps’. The focused performance metrics were the mean squared error and spectrogram comparative analysis. The results for the Open-Unmix model are illustrated in Figures 4, 5, 6, and 7.
 
-![Spectrogram of ’I Knew You Were Trouble’ - Open-Unmix](spects/trouble.png)
+![Spectrogram of ’I Knew You Were Trouble’ - Open-Unmix](images/trouble.png)
 
 The spectrogram for ’I Knew You Were Trouble’ (Figure 4) shows the effectiveness of the Open-Unmix model, as the spectrograms are very similar. Furthermore, the mean squared error for this track was 2.0109, showing excellent isolation.
 
-![Spectrogram of ’Maps’ - Open-Unmix](spects/maps.png)
+![Spectrogram of ’Maps’ - Open-Unmix](images/maps.png)
 
 For ’Dirty Diana’ (Figure 5), the model also shows a successful vocal extraction with an MSE of 1.9992.
 
 
-![Spectrogram of ’Bohemian Rhapsody’ - Open-Unmix](spects/bohemian.png)
+![Spectrogram of ’Bohemian Rhapsody’ - Open-Unmix](images/bohemian.png)
 
 The popular song, ’Bohemian Rhapsody’ (Figure 6) was processed, with the model achieving an MSE of 2.0095. This adds to show the model’s robustness in separating intricate vocal harmonies.
 
 Finally, ’Maps’ (Figure 7) also shows Open Unmix’s model’s consistent performance across different genres, showing very similar spectrograms.
 
-![Spectrogram of ’Maps’ - Open-Unmix](spects/maps.png)
+![Spectrogram of ’Maps’ - Open-Unmix](images/maps.png)
 
 ### 5.2 Profanity Detection Performance
 
