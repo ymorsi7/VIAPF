@@ -46,6 +46,8 @@ Vocal isolation has been a significant area of research in audio signal processi
 
 ### 3.1 Open-Unmix Model
 
+![Architecture of the Open-Unmix Model](images/OU.png)
+
 The Open-Unmix (UMX) model is a highly ranked and used model designed for music source separation (bass, drums, and vocals). It operates through multiple steps:
 
 - **Spectrogram Transformation:** First, the input is converted into spectrogram format with STFT.
@@ -59,9 +61,11 @@ The Open-Unmix (UMX) model is a highly ranked and used model designed for music 
 
 - **Output:** The model subsequently brings the isolated spectrogram back to the time domain, which produces vocal tracks without the instruments. Below is the architecture of the Open-Unmix model, showing a lower-level explanation.
 
-![Architecture of the Open-Unmix Model](images/OU.png)
+
 
 ### 3.2 Autoencoder-Based Neural Network
+
+![Architecture of the Autoencoder Model](images/AE.png)
 
 Our autoencoder implements a convolutional neural network to isolate the vocals, also using the MUSDB18HQ dataset. Our architecture is mainly consisting of two components that we have seen in Open Unmix’s model: the encoder and the decoder.
 
@@ -108,9 +112,10 @@ The MUSDB18-HQ dataset was used for our training, which has high-quality tracks 
   
 - **Evaluation:** The model was evaluated using Signal-to-Distortion Ratio (SDR), Signal-to-Interference Ratio (SIR), and subjective listening tests, as observed in images. We were able to compare our isolated vocal tracks with the official acapella.
 
-![Architecture of the Autoencoder Model](images/AE.png)
+
 
 #### 4.2.2 Autoencoder-based Model
+
 
 - **Training:** The model was trained from scratch using the same dataset, and we wanted to optimize reconstruction error.
 
