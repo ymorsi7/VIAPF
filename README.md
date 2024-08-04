@@ -63,7 +63,7 @@ The Open-Unmix (UMX) model is a highly ranked and used model designed for music 
 
 
 
-### 3.2 Autoencoder-Based Neural Network
+### 3.2 Custom Autoencoder-Based Neural Network
 
 ![Architecture of the Autoencoder Model](images/AE.png)
 
@@ -114,7 +114,7 @@ The MUSDB18-HQ dataset was used for our training, which has high-quality tracks 
 
 
 
-#### 4.2.2 Autoencoder-based Model
+#### 4.2.2 Custom Autoencoder-based Model
 
 
 - **Training:** The model was trained from scratch using the same dataset, and we wanted to optimize reconstruction error.
